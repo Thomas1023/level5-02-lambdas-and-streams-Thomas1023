@@ -5,7 +5,7 @@ public class LambdaMethods {
 		// 1. Look at the SpecialPrinter function interface.
 	
 		// Here is an example of calling the printCustomMessage method with a lambda.
-		// This prints the passed int String 10 times.
+		// This prints the passed in String 10 times.
 		printCustomMessage((s)->{
 			for(int i = 0; i < 10; i++) {
 				System.out.println(s);
