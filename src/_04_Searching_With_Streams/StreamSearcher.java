@@ -9,13 +9,14 @@ public class StreamSearcher {
 	// of times the String parameter appears in the String array. This method will
 	// use Streams to help us out.
 	public long containsCount(String[] strArr, String strToCount) {
+		int i =0;
 		//2. Convert the String array to a stream
-		
+		Stream<String> stream = Arrays.stream(strArr);
 		//3. Use the filter method with a lambda to extract all the String
 		//   elements that match the String parameter.
 		
 		//4. Return the count of the filtered stream.
 		
-		return 0;
+		return stream.filter((s)->strToCount.equals(s)).count();
 	}
 }
